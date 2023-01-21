@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;600&family=Roboto:wght@400;500;700&display=swap');
+
 *, *::after, *::before, body, html{
+    font-family: 'Roboto',sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+ul li, a{
+    text-decoration: none;
+    list-style: none;
 }
 
 .main_container{
@@ -13,7 +22,6 @@
     "nav main main main main" "nav main main main main"
     "nav main main main main" "nav main main main main"
     "nav main main main main" ;
-    background-color: pink;
 }
 
 .header{
@@ -33,4 +41,214 @@
     grid-area: main;
     background-color: #e2e8f0;
     z-index: 80;
+}
+
+.navigation .nav_head img{
+    height: auto;
+    width: 40px;
+    margin-right: 15px;
+}
+
+.navigation .nav_head{
+    margin: 20px 25px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navigation nav img{
+    height: auto;
+    width: 20px;
+    margin-right: 20px;
+}
+
+.navigation nav li a{
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.navigation nav li{
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition-delay: 5ms;
+    transition: backgroung-color 2s;
+}
+
+.navigation nav li:hover{
+    background-color: rgba(255, 255, 255, 0.454);
+}
+
+.navigation nav{
+    padding: 15px;
+}
+
+.nav1{
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+}
+
+header input{
+    width: 600px;
+    height: 30px;
+    border: none;
+    background-color: #e2e8f0;
+    border-radius: 18px;
+    margin-left: 20px;
+    padding: 0 20px;
+}
+
+header img {
+    height: auto;
+    width: 25px;
+}
+
+header .search_head{
+    flex-basis: 50%;
+    align-items: center;
+    display: flex;
+    padding: 0px 50px;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+.p_photo1{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 187, 0);
+    margin: 0px 30px;
+}
+
+.p_photo2{
+    background-color: rgb(255, 187, 0);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.header .user{
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+}
+
+.header .user_h div:last-child{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .user_h div:last-child span{
+    text-align: left;
+    width: 100%;
+    font-weight: 500;
+}
+
+.header .user_h div:last-child span:last-child{
+    font-size: 25px;
+}
+
+.sub_sh{
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+
+.user .buttons button{
+    padding: 10px 30px;
+    font-size: 15px;
+    color: white;
+    background-color: #0ea5e9;
+    border: none;
+    border-radius: 20px;
+    margin-left: 35px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* MAIN */
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 8fr) repeat(1, 3fr);
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    padding: 30px 30px;
+}
+
+.project_sec{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 80%;
+    gap: 30px;
+}
+
+.project_sec .project_items{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 7px 2px #c6c4c4dc;
+}
+
+.project_items{
+    display: flex;
+}
+
+.project_items .side_line{
+    background-color: rgb(255, 187, 0);
+    flex-basis: 2%;
+    border-radius: 0px;
+}
+
+.project_contents{
+    flex-basis: 98%;
+}
+
+.container .main_head{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.container .Ack_tre{
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    height: 85%;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+
+.Ack_tre .A_T_items{
+    background-color: white;
+    width: 100%;
+    height: 260px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px 2px #c6c4c4dc;
 }
