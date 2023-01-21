@@ -109,12 +109,14 @@ header div{
 
 header input{
     width: 600px;
+    min-width: 400px;
     height: 30px;
     border: none;
     background-color: #e2e8f0;
     border-radius: 18px;
     margin-left: 20px;
-    padding: 0 20px;
+    margin-right: 20px;
+    padding: 0 30px;
 }
 
 header img {
@@ -228,6 +230,26 @@ main{
 
 .project_contents{
     flex-basis: 98%;
+    padding: 20px 20px;
+}
+
+.project_contents p{
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: grey;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 5px;
+}
+
+.project_contents h2{
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .container .main_head{
@@ -248,7 +270,71 @@ main{
 .Ack_tre .A_T_items{
     background-color: white;
     width: 100%;
-    height: 260px;
+    height: 250px;
     border-radius: 10px;
+    /* border-top: 5px solid blue; */
     box-shadow: 1px 1px 7px 2px #c6c4c4dc;
+    padding: 25px;
+}
+
+.Ack_tre .ack{
+    padding: 25px;
+    overflow-y: scroll;
+}
+
+.Ack_tre .ack div{
+    border-bottom: 1px solid grey;
+    padding: 15px 0;
+}
+
+.Ack_tre .ack div:last-child{
+    border: none;
+}
+
+.Ack_tre .ack div:first-child{
+    padding-top: 0;
+}
+
+.Ack_tre .ack p{
+    font-size: 13px;
+    color: grey;
+}
+
+.Ack_tre .ack h3{
+    font-size: 16px;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+.trend_items{
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 15px;
+    align-items: center;
+    font-weight: 100;
+}
+
+.trend_items div:first-child{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #0ea5e9;
+    margin-right: 10px;
+}
+
+.trend_items div:last-child{
+    display: flex;
+    flex-direction: column;
+}
+
+.trend_items div:last-child span:last-child{
+    color: gray;
+}
+
+.trend_items div:first-child.pink{
+    background-color: pink;
+}
+
+.trend_items div:first-child.yellow{
+    background-color: rgb(255, 187, 0);
 }
